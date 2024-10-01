@@ -19,10 +19,12 @@ def main():
     """
     Main function to prompt for an IP address and check if the host is responding.
     """
-    current_time  = (datetime.now())
+    ips = ["127.0.0.1","192.168.10.1"]
+    for ip in ips:
 
-    result_from_method = ping_something("127.0.0.1")
-    print(result_from_method)
+        current_time  = (datetime.now())
+        result_from_method = ping_something("127.0.0.1")
+        print(result_from_method)
 
 
 
