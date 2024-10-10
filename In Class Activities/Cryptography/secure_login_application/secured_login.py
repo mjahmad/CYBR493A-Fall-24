@@ -1,5 +1,6 @@
 # Required Libraries
 import psycopg2
+from Demos.win32ts_logoff_disconnected import username
 from cryptography.fernet import Fernet
 import tkinter as tk
 from tkinter import messagebox
@@ -100,7 +101,9 @@ def main():
     create_users_table(db)
 
     # Insert sample users (comment this out after running once to avoid duplicate users)
-    insert_user(db, "user", "pass")
+    user_name = input("Give me a username to store in the database:")
+    password = input("Give me a password to store in the database:")
+    insert_user(db, user_name, password)
 
     # Launch the login screen
     create_login_screen(db)
