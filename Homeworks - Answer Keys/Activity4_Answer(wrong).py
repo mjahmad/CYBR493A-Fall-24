@@ -110,7 +110,7 @@ def create_login_screen(db):
 # Main Function
 def main():
     # Generate key if it does not exist
-    #generate_key()
+    generate_key()
 
     # Connect to the database
     db = DBConnector.MyDB()

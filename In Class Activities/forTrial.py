@@ -19,5 +19,5 @@ list_of_names = ["Erica", "John", "Hilary", "mj"]
 find_name = "MJ"
 for name in list_of_names:
     if find_name.lower() == name.lower():
-        # print("found at {0} location".format(name))
-        print("found")
+        print("found at {0} location".format(name))
+        #("found")
