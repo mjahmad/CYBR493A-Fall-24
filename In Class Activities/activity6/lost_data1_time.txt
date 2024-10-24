@@ -1,5 +1,0 @@
-./time_tracker.sh: line 7: password_list.txt: No such file or directory
-
-real	0m0.000s
-user	0m0.000s
-sys	0m0.000s
