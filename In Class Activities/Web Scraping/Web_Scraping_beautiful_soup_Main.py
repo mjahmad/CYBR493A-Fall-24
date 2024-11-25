@@ -27,11 +27,11 @@ def main():
     for something in main_heading:
         print( something,'\t')
 
-    # Attempt to retrieve paragraphs within the about section using an alternative selector
-    about_paragraphs = scraper.grab_specific_item(soup, ".about-content p")
-    print("About Section Paragraphs:")
-    for para in about_paragraphs:
-        print(para)
+    # # Attempt to retrieve paragraphs within the about section using an alternative selector
+    # about_paragraphs = scraper.grab_specific_item(soup, ".wvu-container wvu-hero__copy ")
+    # print("About Section Paragraphs:")
+    # for para in about_paragraphs:
+    #     print(para,'\\t\\')
 
 
 if __name__ == "__main__":
